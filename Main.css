@@ -29,12 +29,11 @@ body {
     width: 60%;
     min-height: 200px;
     min-width: 385px;
-    max-height: 278px;
+    max-height: 226px;
     background: #FFF;
     margin-right: 40px;
-
+    margin-bottom: 30px;
     border-radius: 10px;
-
 }
 
 .right-side {
