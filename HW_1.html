@@ -5,102 +5,69 @@
     <meta charset="UTF-8">
     <title> My cart </title>
     <link rel="stylesheet" type="text/css" href="Main.css">
+
+
 </head>
 
 <body>
-
     <div class="double-grid">
         <div class="left-side">
             <div class="add-line">
                 <input class="line-for-text" placeholder="Name of product...">
-                <button data-tooltip="Add product to the list" > Add </button>
+                <button id="add-button" data-tooltip="Add product to the list" class="button"> Add </button>
             </div>
 
 
+            <div class="item">
+                <div id="line1" class="raw-of-offer">
+                    <div class="name"> Milk </div>
+                    <div id="ch-quantity" class="quantity">
+                        <button data-tooltip="Reduce the amount of product" class="minus"> - </button>
+                        <div class="number"> 1 </div>
+                        <button data-tooltip="Add amount of product" class="plus"> + </button>
+                    </div>
+                    <div class="bought-remove">
+                        <button class="not-bought"> Not bought </button>
+                        <button data-tooltip="Click if you bought this product " class="bought"> Bought </button>
+                        <button id="delete" data-tooltip="Click if you want to remove product from cart " class="remove"> &#10006; </button>
+                    </div>
 
-            <div class="raw-of-offer">
-                <div class="name"> Milk </div>
-                <div class="quantity">
-                    <button data-tooltip="Reduce the amount of product" class="minus"> - </button>
-                    <div class="number"> 4 </div>
-                    <button data-tooltip="Add amount of product" class="plus"> + </button>
                 </div>
-                <div class="bought-remove">
-                    <button data-tooltip="Click if you bought this product "class="bought"> Bought </button>
-                    <button data-tooltip="Click if you want to remove product from cart " class="remove"> &#10006; </button>
-                </div>
-
-            </div>
-
-            <div class="raw-of-offer">
-                <div class="name"> Tomatoes </div>
-                <div class="quantity">
-                    <button data-tooltip="Reduce the amount of product" class="minus" class="minus"> - </button>
-                    <div class="number"> 4 </div>
-                    <button data-tooltip="Add amount of product" class="plus"> + </button>
-                </div>
-                <div class="bought-remove">
-                    <button data-tooltip="Click if you bought this product " class="bought"> Bought </button>
-                    <button data-tooltip="Click if you want to remove product from cart " class="remove"> &#10006; </button>
-                </div>
-
-            </div>
-
-            <div class="raw-of-offer">
-                <div class="name"> Flowers </div>
-                <div class="quantity">
-                    <button data-tooltip="Reduce the amount of product" class="minus" class="minus"> - </button>
-                    <div class="number"> 4 </div>
-                    <button data-tooltip="Add amount of product" class="plus"> + </button>
-                </div>
-                <div class="bought-remove">
-                    <button data-tooltip="Click if you bought this product " class="bought"> Bought </button>
-                    <button data-tooltip="Click if you want to remove product from cart " class="remove"> &#10006; </button>
-                </div>
-
             </div>
         </div>
-
         <div class="right-side">
             <h2 class="left-in-stack">Left in stack : </h2>
 
             <div class="area-for-left">
-                <div class="added">
-                    <div class="name-of-added">Bread </div>
-                    <div class="quantity-of-added">2</div>
-                </div>
-                <div class="added">
-                    <div class="name-of-added">Apples</div>
-                    <div class="quantity-of-added">2</div>
-                </div>
-                <div class="added">
-                    <div class="name-of-added">Oranges</div>
-                    <div class="quantity-of-added">2</div>
+                <div class="added-item">
+                    <div class="added">
+                        <div class="name-of-added">Bread </div>
+                        <div class="quantity-of-added">1</div>
+                    </div>
                 </div>
             </div>
+
+
             <h2 class="bought-title"> Bought :</h2>
+
             <div class="area-for-bought">
-                <div class="bought-goods">
-                    <div class="name-of-added">Lemons</div>
-                    <div class="quantity-of-added">6</div>
-                </div>
-                <div class="bought-goods">
-                    <div class="name-of-added">Buckwheat</div>
-                    <div class="quantity-of-added">6</div>
-                </div>
-                <div class="bought-goods">
-                    <div class="name-of-added">Rice</div>
-                    <div class="quantity-of-added">6</div>
+                <div class="bought-item">
+                    <div class="bought-goods">
+                        <div class="name-of-bought">Lemons</div>
+                        <div class="quantity-of-added">1</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="badge">
-        <div class="text"> Buy List </div>
-        <div class=created-by>Created by:
-            <div>Alexey Vronskiy</div>
+
+        <div class="badge">
+            <div class="text"> Buy List </div>
+            <div class=created-by>Created by:
+                <div>Alexey Vronskiy</div>
+            </div>
         </div>
 
-
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+    <script type="text/javascript" src="Actions.js"> </script>
 </body></html>
